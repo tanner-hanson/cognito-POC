@@ -4,7 +4,6 @@ var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
 var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
 
 exports.handler = (event) => {
-    console.log('the username is ' + event.username);
 var poolData = {
     UserPoolId : 'us-east-1_lYBdzp5SX', // Your user pool id here
     ClientId : '1c4fskoc9eusch34rrnnnuo8m4' // Your client id here
